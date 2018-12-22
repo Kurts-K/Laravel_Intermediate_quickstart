@@ -6,6 +6,13 @@ use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
 {
+
+
+
+    protected $policies = [
+    'App\Task' => 'App\Policies\TaskPolicy',
+
+    ];
     /**
      * Bootstrap any application services.
      *
